@@ -32,6 +32,7 @@ ramdisk_compression=auto;
 ## AnyKernel file attributes
 chmod -R 750 $ramdisk/*;
 chmod -R 755 $ramdisk/sbin/*;
+chmod +x $ramdisk/sbin/spa
 chown -R root:root $ramdisk/*;
 
 
@@ -42,6 +43,9 @@ ui_print "This kernel supports Spectrum performance profiles select one by downl
 dump_boot;
 
 # begin ramdisk changes
+
+#remove old spectrum profile
+rm -rf $overlay/init.spectrum.rc
 
 # Spectrum Support
 backup_file init.rc;
