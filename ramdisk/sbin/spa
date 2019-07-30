@@ -4,7 +4,7 @@
 profile=$1
 
 # Function to apply ramdisk style settings
-function echo() {
+function write() {
     echo -n $2 > $1
 }
 
