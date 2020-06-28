@@ -11,7 +11,7 @@ do.cleanup=1
 do.cleanuponabort=0
 device.name1=rolex
 device.name2=ido	
-device.name3=mido
+device.name3=land
 device.name4=santoni
 device.name5=riva
 } # end properties
