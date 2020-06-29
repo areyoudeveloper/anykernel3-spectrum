@@ -191,15 +191,7 @@ if [ $? != 0 -o -z "$(ls bin)" ]; then
   abort "Busybox setup failed. Aborting...";
 fi;
 
-ui_print " GoGreen Kernel       ";
-ui_print "                      ";
-ui_print " ||    ||      #      ";
-ui_print " ||    ||     # #     ";
-ui_print " ||    ||    #   #    ";
-ui_print " ||====||   #######   ";
-ui_print "       ||  #       #  ";
-ui_print "       || #         # ";
-ui_print "                      ";
+ui_print " GoGreen Kernel     ";
 ui_print "anykernel by osm0sis @ xda-developers";
 ui_print "= $(file_getprop anykernel.sh kernel.string)";
 
